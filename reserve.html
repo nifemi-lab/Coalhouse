@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table — Coalhouse</title>
+    <link rel="stylesheet" href="e_shop.css" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="NVR_header">
+        <div class="Coalhouse">
+            <div class="fonts">
+                <h2><a href="index.html">Coal<span>house</span></a></h2>
+            </div>
+
+            <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="container" id="navContainer">
+                <div class="Coalhouse_nav">
+                    <a href="menu.html" class="Coalhouse_link">Menu</a>
+                    <a href="story.html" class="Coalhouse_link">Story</a>
+                    <a href="visit.html" class="Coalhouse_link">Visit</a>
+                    <a href="reserve.html" class="Coalhouse_btn">Reserve a Table</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="reserve_container">
+        <div class="menu-head">
+            <h2>Reserve a Table</h2>
+        </div>
+
+        <form class="reserve_form" onsubmit="handleReserve(event)">
+            <div class="form_row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form_row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form_row">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form_row_split">
+                <div class="form_row">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form_row">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form_row">
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests">
+                        <option>1</option>
+                        <option selected>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <label for="notes">Notes (optional)</label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="Coalhouse_btn">Confirm Reservation</button>
+        </form>
+    </div>
+
+<script src="e_shop.js"></script>
+
+</body>
+</html>

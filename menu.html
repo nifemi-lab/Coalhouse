@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coalhouse — Wood-Fired Kitchen</title>
+    <link rel="stylesheet" href="e_shop.css" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="NVR_header">
+        <div class="Coalhouse">
+            <div class="fonts">
+                <h2><a href="index.html">Coal<span>house</span></a></h2>
+            </div>
+
+            <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="container" id="navContainer">
+                <div class="Coalhouse_nav">
+                    <a href="menu.html" class="Coalhouse_link">Menu</a>
+                    <a href="story.html" class="Coalhouse_link">Story</a>
+                    <a href="visit.html" class="Coalhouse_link">Visit</a>
+                </div>
+                <a href="reserve.html" class="Coalhouse_btn">Reserve a Table</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-head">
+            <h2>From the Fire</h2>
+            <p>A short menu, changed with the seasons.<br> These are the four dishes people drive back for.</p>
+        </div>
+
+        <div class="slideshow">
+    <div class="slides">
+        <video class="slide active" muted playsinline loop>
+            <source src="img/food.mp4" type="video/mp4">
+        </video>
+        <video class="slide" muted playsinline loop>
+            <source src="img/coal house .mp4" type="video/mp4">
+        </video>
+        <video class="slide" muted playsinline loop>
+            <source src="img/cook.mp4" type="video/mp4">
+        </video>
+        <video class="slide" muted playsinline loop>
+            <source src="img/co_1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button class="slide-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slide-arrow next" onclick="changeSlide(1)">&#10095;</button>
+
+    <div class="slide-dots"></div>
+</div>
+
+        <div class="dish">
+            <div class="dish-name">The Coalhouse Burger</div>
+            <div class="dish-price">$18</div>
+            <div class="dish-desc">Dry-aged beef, smoked cheddar, charred onion, brioche bun.</div>
+        </div>
+
+        <div class="dish">
+            <div class="dish-name">Whole Roasted Chicken</div>
+            <div class="dish-price">$32</div>
+            <div class="dish-desc">Herb-brined, spatchcocked over oak, salsa verde. Serves two.</div>
+        </div>
+
+        <div class="dish">
+            <div class="dish-name">Wood-Fired Vegetables</div>
+            <div class="dish-price">$14</div>
+            <div class="dish-desc">Seasonal vegetables, charred and blistered over oak.</div>
+        </div>
+
+        <div class="dish">
+            <div class="dish-name">Sourdough Bread</div>
+            <div class="dish-price">$6</div>
+            <div class="dish-desc">Baked in our wood-fired oven, served with house-made butter.</div>
+        </div>
+
+        <div class="dish">
+            <div class="dish-name">Fire-Blistered Greens</div>
+            <div class="dish-price">$14</div>
+            <div class="dish-desc">Whatever's in season, chili oil, toasted seeds.</div>
+        </div>
+
+        <div class="dish">
+            <div class="dish-name">Coal-Baked Cornbread</div>
+            <div class="dish-price">$9</div>
+            <div class="dish-desc">Honey butter, flaky sea salt.</div>
+        </div>
+    </div>
+
+    <script src="e_shop.js"></script>
+
+</body>
+</html>
